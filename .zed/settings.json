@@ -1,0 +1,21 @@
+{
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "clangd",
+        "arguments": [
+          "--background-index",
+          "--clang-tidy",
+          "--completion-style=detailed",
+          "--header-insertion=never",
+          "--log=error",
+          "--query-driver=**/*xtensa-esp32-elf-g++*,**/*xtensa-esp32-elf-gcc*",
+        ],
+      },
+      "initialization_options": {
+        "compilationDatabasePath": "<relative path to folder with compile_commands.json>",
+        "fallbackFlags": ["-std=c++11"],
+      },
+    },
+  },
+}
